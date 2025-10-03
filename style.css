@@ -1,0 +1,53 @@
+/* Basic responsive layout and simple style */
+:root {
+  --bg: #f4f4f9;
+  --text: #222;
+  --muted: #555;
+  --accent: #0077cc;
+  --header-bg: #1f2937;
+  --white: #fff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.site-header {
+  background: var(--header-bg);
+  color: var(--white);
+  padding: 28px 0;
+  text-align: center;
+}
+.site-header h1 { margin: 0 0 6px 0; font-size: 28px; }
+.subtitle { margin: 0; color: #cbd5e1; }
+
+/* Sections */
+section { margin: 28px 0; background: var(--white); padding: 18px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+h2 { margin-top: 0; color: #111827; }
+.projects-list { padding-left: 18px; margin: 8px 0 0 0; }
+.projects-list li { margin: 8px 0; }
+
+/* Links */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Footer */
+.site-footer { text-align: center; padding: 14px 0; color: #fff; background: #111827; margin-top: 12px; }
+
+/* Small screen tweaks */
+@media (max-width: 520px) {
+  .site-header h1 { font-size: 22px; }
+  .container { padding: 12px; }
+}
